@@ -44,10 +44,7 @@ App.controller('shareController', function ($scope, $q, $http, $window) {
         var that = this;
         return $http.post(
           'https://www.onenote.com/api/v1.0/pages',
-          '<html>' +
-          '<head>' +
-            '<title>Hello</title>' +
-          '</head>' +
+          '<html><head><title>Hello</title></head>' +
             new Date().toLocaleString() +
           '</html>',
           {
