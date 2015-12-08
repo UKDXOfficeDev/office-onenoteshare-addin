@@ -41,3 +41,5 @@ N.B.
 This is a simplistic sample to show how this could be approached and should be treated as such, see comments in code for more details on limitations. 
 
 Files of interest, /views/Home/Index.cshtml & /www/js/shareContoller, all other files are standard template. 
+
+See License.md

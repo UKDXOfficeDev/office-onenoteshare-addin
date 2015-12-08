@@ -17,11 +17,12 @@ App.controller('shareController', function ($scope, $q, $http, $window) {
     vm.linkToOneNotePage = null;
 
 
+    //When the page loads look to see if an access token is included in the URL
+    //Warning - Simple positional parsing of the access_token parameter here as an example, replace for production with robust parsing. 
     if ($window.location.hash.indexOf('=') === -1) {
         vm.authToken = null;
     }
     else {
-        //Warning - Simple positional parsing of the access_token parameter here as an example, replace for production with robust parsing. 
         vm.authToken = $window.location.hash.substring($window.location.hash.indexOf('=') + 1, $window.location.hash.length);
         vm.authToken = vm.authToken.substring(0, vm.authToken.indexOf('&'));
     }
