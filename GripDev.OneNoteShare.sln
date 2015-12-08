@@ -7,7 +7,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GripDev.OneNoteShare", "Gri
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OfficeAddin", "OfficeAddin", "{666CBEEE-4A5A-4EDD-9AA3-B46B39081661}"
 	ProjectSection(SolutionItems) = preProject
-		LICENSE.md = LICENSE.md
+		LICENSE. = LICENSE.
 		OneNoteShare.xml = OneNoteShare.xml
 		README.md = README.md
 	EndProjectSection
