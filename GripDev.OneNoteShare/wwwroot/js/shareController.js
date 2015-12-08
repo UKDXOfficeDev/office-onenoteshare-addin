@@ -2,8 +2,8 @@
 
 'use strict';
 
-var AppUrl = 'http://localhost:5007/'
-var ClientId = '000000004C1747BE'
+var AppUrl = 'YOUR-APPS-URL-HERE'
+var ClientId = 'YOUR-CLIENT-ID-HERE'
 
 // module
 var App = angular.module('app', []);
@@ -53,14 +53,12 @@ App.controller('shareController', function ($scope, $q, $http, $window) {
           {
               headers: {
                   'Content-Type': 'text/html',
-                  /* jshint camelcase:false */
                   'Authorization': 'Bearer ' + vm.authToken
-                  /* jshint camelcase:true */
               }
           }
         )
-          .then(function (response) {
-              that.linkToOneNotePage = response.data.links.oneNoteWebUrl.href;
-          });
+        .then(function (response) {
+            that.linkToOneNotePage = response.data.links.oneNoteWebUrl.href;
+        });
     }
 });

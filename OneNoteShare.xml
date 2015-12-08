@@ -7,7 +7,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Microsoft</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Sample task pane add-in 22">
+  <DisplayName DefaultValue="Sample task pane add-in">
     <Override Locale="en-US" Value="Project add-in"/>
   </DisplayName>
   <Description DefaultValue="Describe the features of this app.">
@@ -20,10 +20,7 @@
     <AppDomain>https://login.live.com</AppDomain>
   </AppDomains>
   <Hosts>
-    <Host Name = "Document"/>
-    <Host Name = "Workbook"/>
-    <Host Name = "Presentation"/>
-    <Host Name = "Project"/>
+    <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
     <SourceLocation DefaultValue="http://localhost:5007/">
